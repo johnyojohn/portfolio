@@ -1,163 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/main.scss">
 
-        <title>Potfolio</title>
-    </head>
-    <body>    
-      <div class="top-container">
-        
-        <p>My Portfolio</p>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+</head>
+
+<body>
+
+  <div class="header" id="myHeader">
+    <div class="header-element" id="home_header" style="cursor: pointer">
+      Home
+    </div>
+    <div class="header-element" id="about_me_header" style="cursor: pointer">
+      About Me
+    </div>
+    <div class="header-element" id="my_works_header" style="cursor: pointer;">
+      My Works
+    </div>
+    <div class="header-element" id="awards/titles_header" style="cursor: pointer;">
+      Awards/Titles
+    </div>
+    <div class="header-element" id="contact_header" style="cursor: pointer;">
+      Contact
+    </div>
+  </div>
+
+  <div class="top-container" id="home">
+
+    <p id="title-text">My Portfolio</p>
+  </div>
+
+
+  <div class="content">
+
+    <div class="container_with_picture">
+      <img src="./assets/beenzino-gq-style.png" alt="Avatar" class="image">
+
+      <div>
+        <p style="text-align: center; color: white;" class="fade-in-text">
+          Hi, I'm John Oh.
+        </p>
+
       </div>
-        <div class="header" id="myHeader"style="z-index: 10" >
-        
-         
-          <div>
-            <a href="#" style="cursor: pointer; color:black; text-decoration: none"> Home </a>
-          </div>
-          <div id="my_works_header" style="cursor: pointer;">
-            My Works
-          </div>
-          <div id="awards/titles_header" style="cursor: pointer;">
-            Awards/Titles
-          </div>
-          <div id="contact_header" style="cursor: pointer;">
-            Contact
-          </div>
-          
+      <div class="faded">
+        <div class="text" id="learn_about_me_id">Learn About Me</div>
+      </div>
+    </div>
 
-          
+    <div class="section" id="about_me_id">
+      <h3>About Me</h3>
+      <div style=" display: flex;">
+        <p style="flex:0.5"></p>
+        <p style="flex:1">
+          I was born in South Korea but immigrated to the United States when I was in 2018. Since then, I graduated from
+          Charles E Brown
+          middle school and am currently attending Concord Academy as a junior. My interests include computer science,
+          math, philosophy,
+          and writing. I also love listening to music, especially Korean hip hop and classical music, and I'm a proud
+          varsity discus and shotput thrower in my
+          school track and field team.
+        </p>
+        <p style="flex:0.5"></p>
+      </div>
+    </div>
+
+    <div class="section" id="my_works_id">
+      <h3>My Works</h3>
+      <div class="work_display">
+        <div class="first_row" style="display: flex;">
+          <p style="flex:1">
+            thing1
+          </p>
+          <p style="flex:1">
+            thing2
+          </p>
+        </div>
+        <div class="second_row" style="display: flex;">
+          <p style="flex:1">
+            thing3
+          </p>
+          <p style="flex:1">
+            thing4
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="awards/titles_id">
+      <h3>Awards and Titles</h3>
+      <div style=" display: flex;">
+        <div style="flex:1">
+          <h3> CS</h3>
+          <p>USACO Gold</p>
+          <p>
+            Head of Concord Academy programming club
+          </p>
+          <p>
+            Founder of Concord Academy STEM council
+          </p>
+          <p>
+            Web Editor of The Centipede(Concord Academy's newspaper)
+          </p>
+        </div>
+        <div style="flex:1">
+          <h3> Math</h3>
+          <p>Qualified for AIME 2019, 2020, 2021</p>
+          <p>
+            Head of Concord Academy math club
+          </p>
+          <p>
+            Representative of Concord Academy for HMMT
+          </p>
+          <p>
+            IYMC Finalist
+
+          </p>
 
         </div>
-        
-        <div class="content">
-        
-          <div class="container_with_picture">
-            <img src="./assets/beenzino-gq-style.png" alt="Avatar" class="image" style="width:100%">
-            <div class="faded">
-              <div class="text" id="learn_about_me_id">Learn About Me</div>
-            </div>
-            <div>
-              <p style = "text-align: center; color: white;" class = "fade-in-text">
-                Hi, I'm John Oh.
-              </p>
-
-            </div>
-
-
-
-          </div>
-
-
-          <div class ="about_me" id ="about_me_id">
-            <h3>About Me</h3>
-            <div style =" display: flex;">
-              <p style ="flex:0.5"></p>
-              <p style ="flex:1">
-                I was born in South Korea but immigrated to the United States when I was in 2018. Since then, I graduated from Charles E Brown
-                middle school and am currently attending Concord Academy as a junior. My interests include computer science, math, philosophy, 
-                and writing. I also love listening to music, especially Korean hip hop and classical music, and I'm a proud varsity discus and shotput thrower in my 
-                school track and field team. 
-              </p>
-              <p style ="flex:0.5"></p>
-
-            
-            </div>
-            
-
-          </div>
-
-          <div class ="my_works" id = "my_works_id">
-            <h3>My Works</h3>
-            <div class ="work_display" >
-              <div class ="first_row" style ="display: flex;">
-                <p style ="flex:1"> 
-                  thing1
-                </p>
-                <p style ="flex:1">
-                  thing2
-                </p>
-              </div>
-              <div class ="second_row" style ="display: flex;">
-                <p style ="flex:1"> 
-                  thing3
-                </p>
-                <p style ="flex:1">
-                  thing4
-                </p>
-              </div>
-              
-            </div>
-
-          </div>
-
-          <div class ="about_me" id ="awards/titles_id">
-            <h3>Awards and Titles</h3>
-            <div style =" display: flex;">
-              <div style ="flex:1">
-                <h3> CS</h3>
-                <p>USACO Gold</p>
-                <p>
-                  Head of Concord Academy programming club
-
-                </p>
-                <p>
-                  Founder of Concord Academy STEM council
-
-                </p>
-                <p>
-                  Web Editor of The Centipede(Concord Academy's newspaper)
-                </p>
-              
-              </div>
-              <div style ="flex:1">
-                <h3> Math</h3>
-                <p>Qualified for AIME 2019, 2020, 2021</p>
-                <p>
-                  Head of Concord Academy math club
-
-                </p>
-                <p>
-                  Representative of Concord Academy for HMMT
-
-                </p>
-                <p>
-                    IYMC Finalist
-
-                </p>                
-
-              </div>
-              <div style ="flex:1">
-                <h3> Writing</h3>
-                <p>Scholastic Awards Gold Medalist 2019</p>
-                <p>
-                  Scholastic Awards Silver Key and MA Honorable Mention 2020
-                </p>
-                <p>
-                  Technology/Science editor of The Centipede
-
-                </p>
-              
-              </div>
-
-            
-            </div>
-            
-
-          </div>
-
-
-
-
-
-          
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/rdpBZ5_b48g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div style="flex:1">
+          <h3> Writing</h3>
+          <p>Scholastic Awards Gold Medalist 2019</p>
+          <p>
+            Scholastic Awards Silver Key and MA Honorable Mention 2020
+          </p>
+          <p>
+            Technology/Science editor of The Centipede
+          </p>
         </div>
-        <script src="./js/main.js"></script>
+      </div>
+    </div>
 
-    </body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rdpBZ5_b48g" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+  
+</body>
 </html>
