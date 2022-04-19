@@ -3,121 +3,118 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: black;
-    //background-image: url("/assets/IMG-1893.jpg");
-    background-attachment: fixed;
-  }
-  .top-container {
-    background-color: #f1f1f1;
-    
-    padding: 30px;
-    text-align: center;
-  }
-   
-  .header {
-    padding: 0px;
-    background: #555;
-    color: #f1f1f1;
-    width: 100%; 
-    display: flex;
-  }
+  font-family: Arial, Helvetica, sans-serif;
+  background-attachment: fixed;
+  margin: 0px;
+  background-color: black;
+}
 
-  .header > div {
-    opacity: 0.6;
-    color: black;
-    width: 200px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 25px;
-  }
+.top-container {
+  background: #f1f1f1;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px;
+}
 
-  .about_me {
-    background: whitesmoke;
-    color: grayscale($color: #272626);
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 60px;
+#title-text {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header {
+  z-index: 10;
+  background: #555;
+  color: #f1f1f1;
+  width: 100%;
+  overflow: hidden;
+  table-layout: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header-element {
+  padding: 20px 0px;
+  float: left;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  table-layout: fixed;
+}
+
+.section {
+  padding: 100px;
+  text-align: center;
+  height: 95%;
+  background: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky+.top-container {
+  padding-top: 60px;
+}
 
 
-  }
-  
-  
-  .content {
-    padding: 16px;
-  }
-  
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .sticky + .content {
-    padding-top: 102px;
-  }
+.container_with_picture {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
 
-  .container_with_picture {
-    position: relative;
-    width: 65%;
-    display: flex;
-  }
-  
-  .image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
-  
-  .faded {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-  }
-  
-  .container_with_picture:hover .image {
-    opacity: 0.3;
-  }
-  
-  .container_with_picture:hover .faded {
-    opacity: 1;
-  }
-  
-  .text {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-  }
-
-  .my_works {
-    background: whitesmoke;
-    color: grayscale($color: #272626);
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 60px;
-
-  }
- .work_display{
-  margin: auto;
+.image {
+  opacity: 1;
+  display: block;
   width: 50%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
- }
+  height: auto;
+  object-fit: cover;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
 
+.faded {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
 
+.container_with_picture:hover .image {
+  opacity: 0.3;
+}
 
- .fade-in-text {
+.container_with_picture:hover .faded {
+  opacity: 1;
+}
+
+.text {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.work_display {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.fade-in-text {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 150px;
@@ -130,26 +127,51 @@ body {
 }
 
 @keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @-ms-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
